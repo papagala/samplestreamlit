@@ -40,7 +40,7 @@ def run():
     image_hospital = Image.open("hospital.jpg")
     # Looks like you can add HTML in a hacky way
     st.markdown(
-        "<h1>Hacky title</h1>", unsafe_allow_html=True,
+        "<h1>HTML title with custom CSS</h1>", unsafe_allow_html=True,
     )
     # Loads image at the top of the app (align with hack)
     st.image(image, use_column_width=False, width=200)
@@ -52,7 +52,7 @@ def run():
 
     st.sidebar.info("This app is created to predict patient hospital charges")
     st.sidebar.success(
-        "https://www.varonis.com/blog/kerberos-authentication-explained/.org"
+        "https://medium.com/@moez_62905/build-and-deploy-machine-learning-web-app-using-pycaret-and-streamlit-28883a569104"
     )
 
     st.sidebar.image(image_hospital)
